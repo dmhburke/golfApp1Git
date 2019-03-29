@@ -1,0 +1,46 @@
+{% extends "baseTemplate.html" %}
+
+
+{% block browser %} La Tourette GC {% endblock %}
+
+{% block headerContent %}{% endblock %}
+
+{% block pageName %} La Tourette | Hole {{ hole_number }} {% endblock %}
+
+{% block pageContent %}
+
+<div id="holeDetailsContainer">
+  <div id="holePar" class="indyText">PAR <span class="yellowText indyText">{{ hole_par }}</span></div>
+  <div id="holeNo" class="pacerReverse">
+  <div id="holeText" class="indyText">{{ hole_number }}</div></div>
+  <div id="holeIndex"><em>Index {{ hole_index }}</em></div>
+  <div id="holeMeters" class="indyText"><span class="yellowText indyText">{{ hole_meters }}</span> YARDS</div>
+</div>
+
+<div id="scoreSubmitContainer">
+  <div id="scoreEntryContainer">
+<form method="POST">
+      {% csrf_token %}
+    <div id="scoreEntryRow"><div id="playerImage"></div><div id="playerName">{{ player1 }}</div><div id="inputBox">{{ form.slot1_score }}</div>
+    </div>
+    <div id="scoreEntryRow"><div id="playerImage"></div><div id="playerName">{{ player2 }}</div><div id="inputBox">{{ form.slot2_score }}</div>
+    </div>
+    <div id="scoreEntryRow"><div id="playerImage"></div><div id="playerName">{{ player3 }}</div><div id="inputBox">{{ form.slot3_score }}</div>
+    </div>
+    <div id="scoreEntryRow"><div id="playerImage"></div><div id="playerName">{{ player4 }}</div><div id="inputBox">{{ form.slot4_score }}</div>
+    </div>
+
+    </div>
+
+  <div id="submitButtonContainer">
+    <button type="submit" id="holeSubmitButton" class="pacerReverse">
+{% load static %}
+    <img id="submitIcon" src="{% static 'images/submitIcon.svg' %}">
+    </button>
+      </form>
+  </div>
+
+
+</div>
+
+{% endblock %}

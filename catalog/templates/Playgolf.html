@@ -1,0 +1,17 @@
+{% extends "baseTemplate.html" %}
+
+{% block browser %} Play Golf {% endblock %}
+
+{% block headerContent %}{% endblock %}
+
+{% block pageName %}{% endblock %}
+
+{% block pageContent %}
+
+<a href= "{% url 'latourette' %}" style = "text-decoration-line: none">
+<div class="playGolfButton" id="playGolfLaTourette">LaTourette Golf Club</div></a>
+<div class="playGolfButton"></div>
+<div class="playGolfButton"></div>
+
+
+{% endblock %}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>
+Indy1200 |
+{% block browser %} [Insert detail] {% endblock %}
+</title>
+
+<link rel="icon"
+      type="image/png"
+      href="https://static1.squarespace.com/static/582341fa9f7456df6245bfc3/t/5c4f856b0e2e72cc51579f43/1548715388714/_chequeredFlagBlue.png?format=1000w">
+
+<link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div id="superContainer">
+<div class="verticalCenter" id="mobileContainer">
+
+<div id="navContainer" class="pacerHeader">
+{% block headerContent %}
+
+{% endblock %}
+
+  <div id="navIcons">
+    <a href="{% url 'playgolf' %}"><div class="navIconContainer"><img id="navIconImage" src="{% static 'images/navHome.svg'%}"></div></a>
+    <div class="navIconContainer">Lboard</div>
+    <div class="navIconContainer">Golf</div>
+    <div class="navIconContainer">Event</div>
+    <div class="navIconContainer">Exit</div>
+  </div>
+
+  <div id="dynamicPageName">
+{% block pageName %}
+
+{% endblock %}
+
+  </div>
+</div>
+
+<div id="superContentContainer">
+
+{% block pageContent %}
+
+
+{% endblock %}
+</div>
+  </div>
+
+</div>
+
+
+
+
+
+</div>
+</body>
+</html>

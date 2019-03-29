@@ -1,0 +1,34 @@
+{% extends "baseTemplate.html" %}
+
+{% block browser %} La Tourette GC {% endblock %}
+
+{% block headerContent %}{% endblock %}
+
+{% block pageName %} La Tourette GC {% endblock %}
+
+{% block pageContent %}
+
+<a href="{% url 'scoreboard'%}">
+<div id="scoreboardCheck" class="pacerReverse">
+  <div id="scoreboardTitle">Check scoreboard</div>
+</div></a>
+
+<div id="holeContainer">
+
+  {% if latourholemodel_list %}
+  {% for hole in latourholemodel_list %}
+
+    <a href="{{ hole.get_absolute_url }}">
+    <div class="holeButton"> {{ hole.number }} </div></a>
+
+  {% endfor %}
+
+  {% else %}
+  No holes entered for this round
+  {% endif %}
+<a href="https://www.latourettegc.com/golf-tee-times/scorecard/294" target="_blank">
+<div id="scorecardLink" class="pacerReverse">Scorecard</div>
+</a>
+</div>
+
+{% endblock %}

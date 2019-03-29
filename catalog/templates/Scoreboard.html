@@ -1,0 +1,70 @@
+{% extends "baseTemplate.html" %}
+
+{% block browser %} La Tourette GC {% endblock %}
+
+{% block headerContent %}{% endblock %}
+
+{% block pageName %} La Tourette GC {% endblock %}
+
+{% block pageContent %}
+<div id="scoreboardDetailContainer" class="pacerReverse">
+  <div id=scoreboardHeaderPHolder>
+  <div id="scoreboardHeader"><span class="indyText" style="font-size: 1.25rem;">La Tourette Golf Club</span> <br>Scoreboard</div>
+
+  <div id="headerRow">
+    <div id="nameHeader">Player</div>
+    <div id="pointsHeader">Score</div>
+    <div id="thruHeader">Thru</div>
+  </div>
+  </div>
+  {% if allocation_list %}
+  {% for player in allocation_list %}
+  <div id="resultRow">
+    <div id="scoreboardImage"></div>
+    <div id="scoreboardName">{{ player.player_name }}</div>
+    <div id="scoreboardScore">{{ player.player_stbl }}</div>
+    <div id="scoreboardHoles">{{player.player_holesplayed }}</div>
+  </div>
+
+  {% endfor %}
+
+  {% else %}
+  <div id="resultRow"><div id="scoreboardImage"></div><div id="scoreboardName">No players</div></div>
+  <div id="resultRow"><div id="scoreboardImage"></div><div id="scoreboardName"></div></div>
+  <div id="resultRow"><div id="scoreboardImage"></div><div id="scoreboardName"></div></div>
+  <div id="resultRow"><div id="scoreboardImage"></div><div id="scoreboardName"></div></div>
+  <div id="resultRow"><div id="scoreboardImage"></div><div id="scoreboardName"></div></div>
+  <div id="resultRow"><div id="scoreboardImage"></div><div id="scoreboardName"></div></div>
+  <div id="resultRow"><div id="scoreboardImage"></div><div id="scoreboardName"></div></div>
+  <div id="resultRow"><div id="scoreboardImage"></div><div id="scoreboardName"></div></div>
+  <div id="resultRow"><div id="scoreboardImage"></div><div id="scoreboardName"></div></div>
+  <div id="resultRow"><div id="scoreboardImage"></div><div id="scoreboardName"></div></div>
+  <div id="resultRow"><div id="scoreboardImage"></div><div id="scoreboardName"></div></div>
+  <div id="resultRow"><div id="scoreboardImage"></div><div id="scoreboardName"></div></div>
+
+  {% endif %}
+
+  <div id="scoreboardFooter" class="pacerYellowBackground">
+
+    <a href="{% url 'latourette'%}">
+      <div id="scoreboardbackButton">
+      {% load static %}
+      <img id="scoreboardBackIcon" src="{% static 'images/scoreboardBack.svg' %}">
+    </div></a>
+  </div>
+
+  </div>
+
+
+
+{% endblock %}
+
+
+
+
+  <div id="resultRow">
+    <div id="scoreboardImage"></div>
+    <div id="scoreboardName">{{ player.player_name }}</div>
+    <div id="scoreboardScore">{{ player.player_stbl }}</div>
+    <div id="scoreboardHoles">18</div>
+  </div>

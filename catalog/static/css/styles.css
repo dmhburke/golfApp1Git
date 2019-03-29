@@ -1,0 +1,581 @@
+* {
+font-family: verdana;
+padding: 0px;
+margin: 0px;
+box-sizing: content-box;
+}
+
+a, a:visited {
+  text-decoration: none;
+  text-decoration-color: none;
+}
+
+.pacerYellowBackground {
+  background-color: #FDB428;
+}
+
+.yellowText {
+  color: #FDB428;
+  font-family: 'Racing Sans One',verdana;
+  text-transform: uppercase;
+}
+
+.indyText {
+  font-family: 'Racing Sans One', verdana;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.pacerHeader {
+  background-color: #FDB428;
+  border-top: 2px solid #002557;
+  border-bottom: 2px solid #002557;
+  color: #002557;
+  font-weight: bold;
+  }
+
+.pacerReverse {
+  background-color: white;
+  border: 2px solid #FDB428;
+  color: #002557;
+  font-weight: bold;
+}
+
+.verticalCenter {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+
+  .holeButton {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    background-color: white;
+    border: 2px solid #FDB428;
+    color: #002557;
+    font-weight: bold;
+    border-radius: 100%;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 1px;
+}
+
+.holeText {
+  height: 20px;
+  padding-top: 23px;
+
+}
+
+.boxShadowSmall {
+  box-shadow: 1px 1px 4px 2px rgba(229,229,229,0.9);
+}
+
+.navIconContainer {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 5px;
+  border: 2px solid #002557;
+  vertical-align: middle;
+  margin-top: 17px;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: #002557;
+  line-height: 55px;
+}
+
+.playGolfButton {
+  height: 150px;
+  width: 90%;
+  background-color: #D7D7D7;
+  border-radius: 10px;
+  margin: 10px auto;
+  margin-bottom: 15px;
+
+  text-align: center;
+  line-height: 150px;
+  font-weight: bold;
+  color: white;
+}
+
+#playGolfLaTourette {
+  background-image: linear-gradient(170deg,
+      rgba(7, 109, 242, 0.2),
+      rgba(0, 10, 22, 0.7)
+    ), url(http://www.nycteetimes.com/images/course2.jpg);
+  background-position: 0% 50%;
+  background-size: 350px;
+  box-shadow: 1px 1px 7px 3px grey;
+
+}
+
+#superContainer {
+  height: 650px;
+  position: relative;
+  background-color: #F2F2F2;
+}
+
+#superContentContainer{
+  height: 500px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+}
+
+
+#mobileContainer {
+  width: 375px;
+  height: 650px;
+  background-color: WHITE;
+  margin: 0 auto;
+
+}
+
+#navContainer {
+  height: 100px;
+}
+
+#navIcons {
+  text-align: center;
+  height: 80%;
+}
+
+#navIconImage {
+  height: 35px;
+  margin-top: 9px;
+}
+
+#dynamicPageName {
+  font-size: 0.75rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 5px;
+}
+
+#scoreboardCheck {
+  height: 45px;
+  border-radius: 10px;
+  position: relative;
+  top: 0px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 2px 2px 15px 3px rgba(229,229,229,0.9);
+}
+
+#courseNameDynamic {
+  font-weight: normal;
+}
+
+#scoreboardTitle {
+  line-height: 45px;
+}
+
+#holeContainer {
+  border: 2px solid #002557;
+  border-radius: 10px;
+  position: relative;
+  top: 5px;
+  width: 90%;
+  height: 400px;
+  margin: 0px auto;
+  text-align: center;
+  box-shadow: 2px 2px 15px 3px rgba(229,229,229,0.9);
+  padding-top: 25px;
+}
+
+#scorecardLink {
+  display: inline-block;
+  vertical-align: middle;
+  height: 60px;
+  width: 130px;
+  border-radius: 20px;
+  line-height: 60px;
+  margin-left: 4px;
+}
+
+/** START ROUND PAGE **/
+#startRoundButton {
+  height: 45%;
+  width: 65%;
+  background-image: linear-gradient(to bottom right, rgba(253,170,36,1), rgba(253,170,36,0.8), rgba(253,170,36,0.5), rgba(253,170,36,0.1));
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 28%;
+  text-decoration-line:none;
+  color: #002557;
+  font-weight: bold;
+  padding-top: 30px;
+  box-shadow: 2px 2px 15px 3px rgba(229,229,229,0.9);
+  border: 1px solid white;
+}
+
+#startRoundText {
+  margin-top: 65px;
+
+}
+
+#enterScoresText {
+  text-align: left;
+  width: 92%;
+  margin: 8px auto;
+  color:  #002557;
+
+}
+
+#holesContainer {
+  text-align: left;
+  width: 92%;
+  margin: 0 auto;
+  height: 90%;
+
+}
+
+/*** HoleEntryDetails ***/
+
+#holeDetailsContainer {
+  background-color: #002557;
+  height: 20%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid white;
+  width: 99%;
+  margin: 0 auto;
+}
+
+#holeNo {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  top: 12px;
+  left: 130px;
+}
+
+#holeText {
+  line-height: 59px;
+  margin: 0px auto;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#holePar, #holeMeters {
+  position: absolute;
+  height: 20px;
+  width: 110px;
+  color: white;
+  top: 35px;
+}
+
+#holePar {
+  left: 40px;
+}
+
+#holeMeters {
+  left: 215px;
+}
+
+#holeIndex {
+  position: absolute;
+  height: 20px;
+  width: 60px;
+  color: white;
+  top: 80px;
+  left: 130px;
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: verdana;
+
+}
+
+#scoreSubmitContainer {
+  background-color: white;
+  height: 78%;
+  border: 1px solid white;
+  width: 99%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#scoreEntryContainer {
+  height: 75%;
+  width: 100%;
+  background-color: #F2F2F2;
+  border: 1px solid white;
+  overflow-x: scroll;
+
+}
+
+#scoreEntryRow {
+  height: 65px;
+  width: 95%;
+  background-color: white;
+  margin: 7px auto;
+  box-sizing: border-box;
+}
+
+#playerImage {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  background-color: lightgrey;
+  vertical-align: middle;
+
+  margin-left: 3px;
+}
+
+#playerName {
+  display: inline-block;
+  height: 100%;
+  width: 155px;
+  background-color: white;
+  vertical-align: middle;
+  margin-left: 10px;
+  line-height: 65px;
+  color: #002557;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#inputBox {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 85px;
+  height: 100%;
+  border: 4px solid white;
+  background-color: #F2F2F2;
+  float: right;
+}
+
+.scoreInput {
+  box-sizing: border-box;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: verdana;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid white;
+  background-color: #F2F2F2;
+  color: #002557;
+  font-weight: bold;
+
+}
+
+#submitButtonContainer {
+  height: 25%;
+  width: 100%;
+  background-color: #002557;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid white;
+}
+
+#holeSubmitButton {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 100%;
+  position: relative;
+  top: 12px;
+  left: 130px;
+}
+
+#submitIcon {
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+#contentChildOne {
+  height: 300px;
+  width: 100%;
+  background-color: black;
+}
+
+
+
+/*** END HoleEntryDetails ***/
+
+/*** START SCOREBOARD DETAILS ***/
+#scoreboardDetailContainer {
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  top: 0px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 2px 2px 15px 3px rgba(229,229,229,0.9);
+  overflow: scroll;
+  font-size: 0.9rem;
+}
+
+#scoreboardHeaderPHolder {
+  height: 110px;
+  width: 100%
+}
+
+  #scoreboardHeader {
+    box-sizing: border-box;
+    padding-top: 19px;
+    height: 80px;
+    width: 304px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: white;
+    position: fixed;
+
+  /*border: 2px solid #FDB428;*/
+
+}
+
+#headerRow {
+  box-sizing: border-box;
+  height: 30px;
+  width: 304px;
+  margin: 0px auto;
+  line-height: 20px;
+  background-color: #002557;
+  position: fixed;
+  top: 204px;
+
+
+
+
+}
+
+#nameHeader, #pointsHeader, #thruHeader {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 30px;
+  height: 100%;
+  color: white;
+}
+
+#nameHeader {
+  width: 55%;
+  padding-left: 10px;
+  float: left;
+  margin-left: 0px;
+  text-align: center;
+}
+
+#pointsHeader {
+  width: 15%;
+
+}
+
+#thruHeader {
+  width: 15%;
+  float: right;
+  padding-right: 10px;
+  margin-right: 0px;
+}
+
+/*Blue color #002557*/
+
+#resultRow {
+  height: 50px;
+  width: 95%;
+  margin: 7px auto;
+  font-weight: normal;
+  line-height: 50px;
+  box-shadow: 2px 2px 5px 3px rgba(229,229,229,0.9);
+}
+
+#scoreboardImage {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin: 2px;
+  margin-top: 5px;
+  border-radius: 100%;
+  background-color: #F2f2f2;
+}
+
+#scoreboardName {
+  display: inline-block;
+  height: 100%;
+  width: 120px;
+  margin-left: 2px;
+  float: left;
+  text-align: left;
+}
+
+#scoreboardScore {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 50px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+#scoreboardHoles {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 50px;
+  text-align: center;
+  float: right;
+  margin-right: 3px;
+}
+
+#scoreboardFooter {
+  height: 80px;
+  width: 305px;
+  position: fixed;
+  top: 543px;
+  left: 34px;
+  z-index: 100;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top: 2px solid #002557;
+
+}
+
+#scoreboardbackButton {
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  margin: 0 auto;
+  margin-top: 6px;
+  background-color: #002557;
+  border: 2px solid white;
+}
+
+#scoreboardBackIcon {
+  height: 40px;
+  margin-top: 12px;
+}
+
+
+/*** END SCOREBOARD DETAILS ***/
+
+@media only screen and (min-width: 1200px) {
+  #superContainer {
+    height: 900px;
+  }
+}
